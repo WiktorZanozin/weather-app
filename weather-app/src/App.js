@@ -9,11 +9,15 @@ class App extends React.Component {
     state = {
       temperature: undefined,
       city: undefined,
+      icon: undefined,
       country: undefined,
       humidity: undefined,
       description: undefined,
       error: undefined
     }
+
+
+    
     getWeather = async (e) => {
       e.preventDefault();
       const city = e.target.elements.city.value;
